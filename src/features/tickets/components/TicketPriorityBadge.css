@@ -1,0 +1,27 @@
+.low,
+.medium,
+.high {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 6px 10px;
+  border-radius: 999px;
+
+  font-size: 0.8rem;
+  font-weight: 700;
+  line-height: 1;
+  color: white;
+}
+
+.low {
+  background-color: rgb(5, 31, 124);
+}
+
+.medium {
+  background-color: rgb(138, 84, 254);
+}
+
+.high {
+  background-color: rgb(160, 6, 101);
+}

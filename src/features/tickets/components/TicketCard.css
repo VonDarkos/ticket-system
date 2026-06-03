@@ -1,0 +1,94 @@
+.ticket-row {
+  display: grid;
+  grid-template-columns: 140px 1.4fr 130px 130px 170px 230px;
+  gap: 16px;
+  align-items: center;
+
+  padding: 14px 20px;
+  border-bottom: 1px solid var(--border);
+}
+
+.ticket-row:last-child {
+  border-bottom: none;
+}
+
+.ticket-row__id {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #6b7280;
+}
+
+.ticket-row__content h3 {
+  margin: 0 0 4px;
+  color: var(--text-heading);
+  font-size: 0.95rem;
+}
+
+.ticket-row__content p {
+  margin: 0;
+  color: var(--text);
+  font-size: 0.85rem;
+}
+
+.ticket-row__date {
+  color: #6b7280;
+  font-size: 0.85rem;
+}
+
+.ticket-row__actions {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.ticket-row__actions select {
+  min-width: 120px;
+  min-height: 40px;
+  padding: 8px 12px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: white;
+  font-size: 0.85rem;
+}
+
+.ticket-row__icon-button {
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: white;
+
+  font-size: 1.1rem;
+}
+
+.ticket-row__icon-button--danger {
+  border-color: #fecaca;
+  background: #fef2f2;
+}
+
+.ticket-row {
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .ticket-row {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding: 16px;
+  }
+
+  .ticket-row__actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .ticket-row__actions select,
+  .ticket-row__icon-button {
+    width: 100%;
+    max-width: none;
+  }
+}

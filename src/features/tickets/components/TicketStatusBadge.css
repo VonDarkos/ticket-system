@@ -1,0 +1,29 @@
+.open,
+.in-progress,
+.closed {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 8px 14px;
+  border-radius: 999px;
+
+  font-size: 0.9rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.open {
+  color: #166534;
+  background-color: #dcfce7;
+}
+
+.in-progress {
+  color: #92400e;
+  background-color: #fef3c7;
+}
+
+.closed {
+  color: #991b1b;
+  background-color: #fee2e2;
+}

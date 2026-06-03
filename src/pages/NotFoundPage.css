@@ -1,0 +1,62 @@
+.not-found-page {
+  min-height: calc(100vh - 140px);
+  display: grid;
+  place-items: center;
+}
+
+.not-found-card {
+  width: 100%;
+  max-width: 520px;
+  padding: 36px;
+  border-radius: 18px;
+
+  background: var(--surface);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+
+  text-align: center;
+}
+
+.not-found-card__code {
+  display: inline-flex;
+  margin-bottom: 14px;
+  padding: 8px 14px;
+  border-radius: 999px;
+
+  background: rgba(124, 58, 237, 0.1);
+  color: var(--primary);
+  font-weight: 800;
+}
+
+.not-found-card h1 {
+  margin-bottom: 10px;
+  color: var(--text-heading);
+}
+
+.not-found-card p {
+  margin-bottom: 24px;
+  color: var(--text);
+}
+
+.not-found-card__button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 12px 18px;
+  border-radius: 12px;
+
+  background: var(--primary);
+  color: white;
+  font-weight: 800;
+}
+
+@media (max-width: 768px) {
+  .not-found-card {
+    padding: 28px 20px;
+  }
+
+  .not-found-card__button {
+    width: 100%;
+  }
+}
